@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Account Creation Form -->
+        <form id="create-account-form">
+            <div id="main-form">
+                <label for="acc-number">Account Number</label>
+                <input type="text" id="acc-number" placeholder="Enter Account Number">
+                <label for="acc-name">Account Name</label>
+                <input type="text" id="acc-name" placeholder="Enter Account Name">
+                <label for="acc-balance">Initial Balance</label>
+                <input type="number" id="acc-balance" placeholder="Enter Initial Balance">
+                <button type="submit" id="btn-create">Create Account</button>
+            </div>
+        </form>
+
+        <!-- Fund Transfer Form -->
+        <form id="transfer-form">
+            <div id="main-form">
+                <label for="from-acc">From Account</label>
+                <input type="text" id="from-acc" placeholder="From Account Number">
+                <label for="to-acc">To Account</label>
+                <input type="text" id="to-acc" placeholder="To Account Number">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter Amount">
+                <button type="submit" id="btn-transfer">Transfer Funds</button>
+            </div>
+        </form>
+
+        <!-- Account Information -->
+        <h1>Account List</h1>
+        <div id="account-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
